@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:new_flutter/screens/GlobalNotification.dart';
 import 'package:telephony/telephony.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 
@@ -14,17 +15,17 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    checkNotifications();
+    GlobalNotification.instance.setupNotification(context);
   }
 
   checkNotifications() async {
-    // var token = await messaging.getToken(
-    //   vapidKey: "BGpdLRs......",
-    // );
+
+    await messaging.requestPermission();
+    var token = await messaging.getToken();
+    print("=============> $token");
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
       print('Got a message whilst in the foreground!');
       print('Message data: ${message.data}');
-
       if (message.notification != null) {
         print('Message also contained a notification: ${message.notification}');
       }
