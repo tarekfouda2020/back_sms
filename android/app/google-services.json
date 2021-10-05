@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "554798591870",
+    "project_id": "sendsmsapp-7efd5",
+    "storage_bucket": "sendsmsapp-7efd5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554798591870:android:faf304cf10621a755f0d2f",
+        "android_client_info": {
+          "package_name": "com.sendsms.sa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554798591870-tpbsq247is6m8i9nq3mfimf6c7plantb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sendsms.sa",
+            "certificate_hash": "ce547dd7eee84f4c042bde712338d12e4727b0ab"
+          }
+        },
+        {
+          "client_id": "554798591870-hp20f3k7ndeqo862ksf5jj03orcl790p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnAUq0pXbJndew9csYA6QBy4sKGhjP9PI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554798591870-hp20f3k7ndeqo862ksf5jj03orcl790p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "554798591870-illcu8ephbf1eg64o151abnb0ngdlish.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sendsms.sa"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
